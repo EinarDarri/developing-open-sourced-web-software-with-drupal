@@ -18,10 +18,11 @@ It would be great to integrate into this book a brief history of Drupal, since t
 In this chapter we cover all the basics about open source software, history, licenses etc. Why should we choose open source rather that proprietary software?
 
 ## Development tools
-This chapter covers all the different development tools you need for Drupal install and development. Everything from system platforms like Docker and DDEv, IDE's, versioning control etc.
+This chapter covers all the different development tools you need for Drupal install and development. Everything from 
+system platforms like Docker and DDEv, IDE's to versioning control.
 
 ## Installing Drupal
-This chapter should cover both installation of Drupal Core and Drupal CMS (or should we have it as a seperate chapters?). Let's keep this chapter simple, just to cover each installation.
+This chapter should cover both installation of Drupal Core and Drupal CMS (or should we have it as a separate chapters?). Let's keep this chapter simple, just to cover each installation.
 
 ## Where do I begin?
 * What is a CMS?
