@@ -10,7 +10,7 @@ The book is also open source, meaning that you can freely download, reuse, modif
 
 ## What this book covers
 
-## Convensions used
+## Conventions used
 We use very standard text conventions throughout this book to demonstrate code examples.
 
 Write examples of code conventions
