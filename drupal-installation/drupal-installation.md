@@ -85,6 +85,65 @@ When you press **Save and continue** you should see the initial Drupal webpage a
 To install Drupal CMS on your computer, you only have to change one line in the previous list:
 5. Run `ddev composer create-project drupal/cms`
 
+After **composer** has run, you can now navigate to your project in your browser, or run `ddev launch` to start the 
+installation process.
+
+That will give you the **"Getting started"** page, the first installation page of Drupal CMS.
+
+![7-cms-getting-started.png](screenshots/7-cms-getting-started.png)
+*Image 7 - Drupal CMS - Getting Started screen*
+
+As the page prompts, you can select any pre-configured types of content, or add them later. It's our recommendation that
+you leave it as is for now. We will cover all these selections in other chapters. 
+
+Choose **Next ->** (or Skip this step, it's the same!).
+
+![8-cms-give-your-site-a-name.png](screenshots/8-cms-give-your-site-a-name.png)
+*Image 8 - Drupal CMS - Give your site a name screen*
+
+Here you can give your site a new name, or leave it as is, since we're just experimenting.
+
+Choose **Next ->**
+
+![9-cms-create-your-account.png](screenshots/9-cms-create-your-account.png)
+*Image 9 - Drupal CMS - Create your account screen*
+
+Here you will create your user account for your newly created Drupal CMS site. Note the difference between
+this account creation and when we installed Drupal Core. It requests an email instead of a username! We'll get back to the
+reason later.
+
+Enter your email and create a password. I normally use 12345 when I'm creating a temporary site.
+
+Choose **Finish**
+
+Your installation will continue. You should see the process on your screen. If the image prints well, you can
+see the blue bar animate from 0 - 100%.
+
+![10-cms-finishing-setup.png](screenshots/10-cms-finishing-setup.png)
+*Image 10 - Drupal CMS installation process*
+
+![11-drupal-cms-dashboard.png](screenshots/11-drupal-cms-dashboard.png)
+*Image 11 - Drupal CMS Dashboard*
+
+## Install Drupal CMS with MacOS, Linux or Windows Installer ##
+Yet another way to install Drupal CMS is to download a ready-to-deploy image for macOS, Linux or Windows. In order to do
+so, follow these steps *(taken from the new.drupal.org website)*:
+1. Visit the Drupal Launcher download page to download the launcher: https://new.drupal.org/drupal-cms/launcher. Download the launcher that suits your operating system.
+2. On Mac, open the `.dmg` and drag the Drupal CMS Launcher to your Application folder. You'll launch the application from there.
+3. Simply double-click to open the app, and it will begin an initial setup process to install everything needed to run Drupal CMS locally on your machine.
+4. Click **Visit site** to open the site in your browser. It really is a one button application! 
+
+After install, you can access the site files in the *drupal* folder, located in *Documents*. If you quit
+the app, your site will be paused, but any changes you make will be saved. You can access it again by opening
+the app.
+
+To reset the Drupal CMS install, quit the app, delete the *drupal* folder and restart the app. It will install Drupal CMS 
+fresh again.
+
+Although you might be able to later move the code to a production server, I strongly recommend that you only use the launcher
+for quick examination of Drupal CMS. If you want to experiment further and then want to move it to a production
+server, use the DDEV/Lando setup instead.
+
 ## Starting and stopping DDEV containers
 Whenever you are done working with your Drupal project, you can stop the containers with `ddev stop`. DDEV will keep the
 application and you can pick up where you left off. To run stopped containers, run `ddev launch`, which will start your project
