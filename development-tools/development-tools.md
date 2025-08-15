@@ -142,9 +142,35 @@ same place.
 
 This book is maintained by using Git and it's hosted on GitLab for editors to collaborate on.
 
+# XDebug
+If you are going to be writing some code for Drupal, you really are going to hit brick walls if you don't get familiar with
+XDebug. It's a debugging tool that allows you to pause the program mid-in-process, to inspect variables and step through 
+the code to find out why "it never reaches function X".
+
+Before XDebug, almost the only alterative was the "print_r() && die()" method. If you wanted to understand what was in a 
+variable, object or an array, you would put these statements into your code:
+```
+// Here we have a "normal" code, and we need to know if the sum is really 5
+$first_number = 2;
+$second_number = 3;
+$sum = $first_number + $second_number;
+// Enter print_r and die!
+print_r($sum); die();
+```
+
+This would print out the value of the $sum variable, **5**. But it would also kill the process of your program! In order to 
+continue, you now have to remove the code and run the program again. Which is a very tedious and error-prone process.
+
+Enter XDebug. Instead of doing this, you can just add a break point in your ide, configure a listener and run your program
+again. When the process reaches your breakpoint the code will pause until you either let it resume again or you
+start stepping through your code.
+
+It's my opinion that developing without a debugger is a very daunt and unnecessary process. Configuring XDebug is rather 
+easy, especially with a Docker setup. There is a separate chapter on how to install and configure XDebug later in this book.
+
 # Conclusion
-We've mentioned a lot of tools you can use when developing for Drupal. Drupalviking developes using Macbook Pro, DDEV,
-PHPStorm and Git+GitLab. That does not mean that's the best, these are just the tool he uses. Feel free to explore all the 
+We've mentioned a lot of tools you can use when developing for Drupal. Drupalviking develops using Macbook Pro, DDEV,
+PHPStorm, XDebug and Git+GitLab. That does not mean that's the best, these are just the tool he uses. Feel free to explore all the 
 possibilities for your development work! The processes described in this book are mainly using these technologies, but because
 it's written collaboratively and it's a live document, as other writers come to the project, we will offer explanations using
 different technologies.
