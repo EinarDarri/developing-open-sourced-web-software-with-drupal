@@ -29,7 +29,7 @@ This chapter should cover both installation of Drupal Core and Drupal CMS (or sh
 * Overview of the layout of a Drupal Site
 * Navigating the menu tree
 * Updating basic information
-* Building blocks: Content types, menus, blocks, useres, themes and modules.
+* Building blocks: Content types, menus, blocks, users, themes and modules.
 
 ## Everything is an entity: How Drupal structures it's data
 * More detailed overview of content types
