@@ -1,9 +1,6 @@
-# Installing Xdebug
-Installing Xdebug used to be a daunting process. You would need to add extensions to PHP, configure
-all kinds of files and more **Rephrase this a bit! :-)** 
+Installing Xdebug used to be a daunting process. You would need to add extensions to PHP, configure all kinds of files and more **Rephrase this a bit! :-)** 
 
-But Xdebug is already bundled with DDEV and Lando! So it's just the matter of enabling it and configure your IDE to listen
-to it.
+But Xdebug is already bundled with DDEV and Lando! So it's just the matter of enabling it and configure your IDE to listen to it.
 
 ## DDEV configuration
 In order to enable Xdebug in DDEV you have two options:
@@ -11,9 +8,7 @@ In order to enable Xdebug in DDEV you have two options:
 2. Edit the file. Add or modify the `xdebug_enabled` key to `true`.
 3. Rebuild your DDEV environment by running `ddev restart`
 
-You could also just run the command `ddev xdebug on` when your DDEV project is running. That will enable Xdebug just
-for now, but keeps it otherwise disabled, which is probably a better choice, since running Xdebug constantly
-has a huge performance impact.
+You could also just run the command `ddev xdebug on` when your DDEV project is running. That will enable Xdebug just for now, but keeps it otherwise disabled, which is probably a better choice, since running Xdebug constantly has a huge performance impact.
 
 ## Lando configuration
 In order to enable Xdebug in Lando, follow these steps:
@@ -21,8 +16,7 @@ In order to enable Xdebug in Lando, follow these steps:
 2. Edit the file. Add or modify the `config` section to include `xdebug: true`. If you are using a recipe like Drupal, you might add it under the `config` key. Otherwise, you can add it under the `appserver`service definition.
 3. Rebuild your Lando environment: Run `lando rebuild -y` to apply the changes.
 
-After rebuilding, Xdebug will be active and ready to receive connections from your IDE for debugging.
-Remember that enabling Xdebug can impact performance, so you might want to toggle it on and off as needed using custom commands.
+After rebuilding, Xdebug will be active and ready to receive connections from your IDE for debugging. Remember that enabling Xdebug can impact performance, so you might want to toggle it on and off as needed using custom commands.
 
 You can read more about configure Lando, Xdebug and PHPStorm here: https://docs.lando.dev/guides/lando-phpstorm.html
 

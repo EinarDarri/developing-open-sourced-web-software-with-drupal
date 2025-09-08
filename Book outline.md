@@ -1,5 +1,3 @@
-# Book outline
-
 This document is supposed to keep the basic outline of the chapters and how we would like to organise them. Since the book has not been finalized, organising the chapters with numbers is not nesseccary, a good, descriptive name is enough.
 
 ## Preface
@@ -38,6 +36,8 @@ This chapter should cover both installation of Drupal Core and Drupal CMS (or sh
     * How to alter the form view when editing content types
     * How to alter how the content displays as a page
 * Taxonomies. The difference between them and content types and their similarities.
+* Users
+* Custom entities
 
 Also explain how the entity system works in Drupal, how everything is Entity and implements the Entity Interface, therefor we can get all kinds of things "magically".
 
